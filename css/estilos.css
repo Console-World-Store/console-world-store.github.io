@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101720;
+}
+
+#contenedor {
+    width: 70%;
+    margin: 30px auto;
+    background-color: #f4f6fa;
+}
+
+
+header {
+   background-image: linear-gradient(#00000080,#00000080),url("/imagenes/ns2.avif");
+   background-size: cover;
+   background-position: center;
+   
+}
+
+header h1 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+nav {
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav a {
+    padding: 15px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #14213d;
+}
+
+/* main */
+main {
+    background-color: #f4f6fa;
+}
+
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #cccccc;
+}
+
+section h2 {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #14213d;
+}
+
+
+article {
+    width: 42%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+article h2, h3 {
+    margin-bottom: 10px;
+    color: #14213d;
+}
+
+article p {
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+article img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+article a {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #356df3;
+    color: white;
+}
+
+
+#inicio {
+    background-color: #14213d;
+}
+
+#inicio article {
+    background-color: #14213d;
+    border: 0;
+}
+
+#inicio article h2 {
+    color: white;
+}
+
+#inicio article p {
+    color: #dddddd;
+}
+
+
+figure {
+    width: 42%;
+    margin: 10px;
+}
+
+figure img {
+    width: 100%;
+    vertical-align: bottom;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+    color: #14213d;
+}
+
+
+aside {
+    width: 42%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+}
+
+aside p {
+    margin-bottom: 10px;
+}
+
+aside a {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #356df3;
+    color: white;
+}
+
+#ofertas {
+    background-color: #fff0f7;
+    border: 1px solid #ff4d9a;
+}
+
+#ofertas h2 {
+    color: #14213d;
+}
+
+#ofertas a {
+    background-color: #ff4d9a;
+}
+
+
+#contacto {
+    background-color: #14213d;
+}
+
+#contacto h2,
+#contacto p {
+    color: white;
+}
+
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #14213d;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer img {
+    width: 30px;
+    margin: 5px;
+}
+.seccion-catalogo {
+    width: 100%;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 25px;
+}
+
+.tarjeta {
+    position: relative;      
+    width: 250px;
+    height: 250px;           
+    border-radius: 8px;
+    overflow: hidden;        
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    box-sizing: border-box;
+    border: none;
+}
+
+.tarjetas img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    z-index: 1;              
+}
+.precio-tarjeta {
+    display: block;
+    font-weight: bold;
+    color: #00aa55;
+    margin-bottom: 10px;
+}
+.tarjeta h3,
+.tarjeta p,
+.tarjeta span,
+.tarjeta a {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;         
+}
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
