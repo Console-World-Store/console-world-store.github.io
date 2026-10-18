@@ -252,3 +252,43 @@ footer img {
 .tarjeta:hover {
     transform: translateY(-10px);
 }
+
+.pagina-juegos {
+    display: flex;
+    align-items: flex-start;
+}
+
+.categorias {
+    width: 180px;
+    margin: 20px 0 20px 20px;
+    padding: 15px;
+    background-color: #14213d;
+    border: none;
+    position: sticky;
+    top: 20px;
+}
+
+.categorias h3 {
+    color: white;
+}
+
+.categorias ul {
+    list-style: none;
+}
+
+.categorias a {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #2a3a5e;
+}
+
+.categorias a:hover {
+    background-color: #356df3;
+}
+
+.catalogo {
+    flex: 1;
+}
