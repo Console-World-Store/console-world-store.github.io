@@ -10,148 +10,356 @@
 
 <body>
 
-    <div id="contenedor">
+     <div id="contenedor">
 
+        <!-- Cabecera -->
         <header>
-            <h1>Console World Store</h1>
-            <alt="Consolas y videojuegos">
+
+            <div id="marca">
+                <h1>Console World Store</h1>
+                <p>Consolas, videojuegos y comunidad gamer</p>
+
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav>
+                <a href="proyecto.html">Inicio</a>
+                <a href="consolas.html">Consolas</a>
+                <a href="videojuegos.html">Videojuegos</a>
+                <a href="ofertas.html">Ofertas</a>
+
+                <a href="eventos.html"
+                   class="activo"
+                   aria-current="page">
+                    Eventos
+                </a>
+
+                <a href="contactanos.html">Contacto</a>
+            </nav>
+
         </header>
 
-        <nav>
-            <a href="inicio">Inicio</a>
-            <a href="consolas.html">Consolas</a>
-            <a href="videojuegos.html">Videojuegos</a>
-            <a href="ofertas.html">Ofertas</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="contactanos.html">Contacto</a>
-        </nav>
 
         <main>
 
-          
-            <section id="inicio">
+            <!-- Presentación de eventos -->
+            <section id="portada-eventos">
 
                 <article>
-                    <h2>Tu próxima aventura comienza aquí</h2>
+
+                    <span>Eventos</span>
+
+                    <h2>La comunidad gamer se reúne aquí</h2>
 
                     <p>
-                        Encuentra consolas retro, consolas actuales,
-                        videojuegos y accesorios.
+                        Participa en torneos, lanzamientos y
+                        actividades para jugadores.
                     </p>
+                    <ul>
+                        <li>Torneos virtuales y presenciales</li>
+                        <li>Reuniones de lanzamientos</li>
+                        <li>Zona de pruebas</li>
+                    </ul>
+                    <p>Y mucho más...</p>
+                    <button type="button" id="abrir-calendario">
+                        Ver calendario
+                    </button>
 
-                    <a href="../paginas/consolas.html">Explorar catálogo</a>
                 </article>
 
                 <figure>
-                    <img src="/imagenes/ns2.jpg"
-                         alt="Consola de videojuegos actual">
-
-                    <figcaption>
-                        Consolas y videojuegos para todos
-                    </figcaption>
+                    <img src="../imagenes/portada-eventos-natural.png"
+                         alt="Presentación de un evento de videojuegos">
                 </figure>
 
             </section>
 
-           
-            <section id="consolas">
+    
+            <!-- Filtros -->
+            <section id="filtros-eventos">
 
-                <h2>Consolas</h2>
+                <h2>Explorar eventos</h2>
+                <div class="grupo-filtros">
+                    <button type="button" class="filtro activo" data-filtro="todos">
+                        Todos
+                    </button>
 
-                <article id="retro">
-                    <img src="/imagenes/atari.jpg"
-                         alt="Consola retro">
+                    <button type="button" class="filtro" data-filtro="torneo">
+                        Torneos
+                    </button>
 
-                    <h3>Consolas retro</h3>
+                    <button type="button" class="filtro" data-filtro="lanzamiento">
+                        Lanzamientos
+                    </button>
 
-                    <p>
-                        Consolas clásicas, máquinas arcade y
-                        ediciones coleccionables.
-                    </p>
-                </article>
-
-                <article id="actuales">
-                    <img src="/imagenes/play5.jpg"
-                         alt="Consola actual">
-
-                    <h3>Consolas actuales</h3>
-
-                    <p>
-                        Equipos modernos con mayor velocidad,
-                        potencia y juego en línea.
-                    </p>
-                </article>
-
+                    <button type="button" class="filtro" data-filtro="activacion">
+                        Activaciones
+                    </button>
+                </div>
             </section>
 
-            
-            <section id="productos">
 
-                <article id="videojuegos">
-                    <img src="/imagenes/gta6.webp" 
-                    alt="Videojuegos disponibles">
+            <!-- Próximos eventos -->
+            <section id="proximos-eventos">
 
-                    <h2>Videojuegos</h2>
+                <h2>Próximos eventos</h2>
 
-                    <p>
-                        Juegos de acción, aventura, deportes
-                        y otros géneros.
-                    </p>
-                </article>
+                <div class="lista-proximos">
 
-                <article id="ofertas">
-                    <img src="/imagenes/ofertasxd.webp"
-                    alt="Ofertas">
-                    <h2>Ofertas</h2>
+                    <!-- Torneo -->
+                    <article class="evento-proximo" data-categoria="torneo">
 
-                    <p>
-                        Descuentos en consolas, videojuegos
-                        y productos seleccionados.
-                    </p>
+                        <img src="../imagenes/torneo-dota2-adaptado.png"
+                             alt="Torneo de videojuegos">
 
-                    <a href="paginas/ofertas.html">Ver ofertas</a>
-                </article>
+                        <div class="informacion-evento">
 
+                            <span>Torneo</span>
+                            <span>Dota 2</span>
+                            <h3>Dulce o Fedeo</h3>
+
+                            <p class="fecha-evento">
+                                26 de octubre,
+                            </p>
+                            <p class="fecha-evento">
+                                4:00 p. m.
+                            </p>
+                            <p>
+                                Competencia abierta de equipos
+                                con registro previo.
+                            </p>
+
+                            <a href="contactanos.html">Información</a>
+
+                        </div>
+
+                    </article>
+   
+                    <article class="evento-proximo" data-categoria="torneo">
+
+                        <img src="../imagenes/torneo-cod-adaptado.png"
+                             alt="Torneo de videojuegos">
+
+                        <div class="informacion-evento">
+
+                            <span>Torneo</span>
+                            <span>Call of Duty</span>
+                            <h3>Torneo 1vs1 "Última bala"</h3>
+
+                            <p class="fecha-evento">
+                                29 de octubre,
+                            </p>
+                            <p class="fecha-evento">
+                                6:30 p. m.
+                            </p>
+                            <p>
+                                Competencia abierta 1vs1 para jugadores
+                                con registro previo.
+                            </p>
+
+                            <a href="contactanos.html">Información</a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Activación -->
+                    <article class="evento-proximo" data-categoria="activacion">
+
+                        <img src="../imagenes/sala-pruebas-adaptada.png"
+                             alt="Presentación de una consola actual">
+
+                        <div class="informacion-evento">
+
+                            <span class="etiqueta">Activación</span>
+
+                            <h3>Zona de prueba</h3>
+
+                            <p class="fecha-evento">
+                                2 de noviembre,
+                            </p>
+                            <p class="fecha-evento">
+                                2:00 p. m.
+                            </p>
+                            <p>
+                                Demostración y prueba de nuevos
+                                equipos y videojuegos.
+                            </p>
+                            <!--
+                            <a href="#">Ver detalles</a>
+                            -->
+                        </div>
+                    </article>
+                </div>
+                <p id="mensaje-sin-eventos">
+                    Actualmente no hay eventos disponibles
+                    en esta categoría.
+                </p>
             </section>
 
-           
-            <section id="informacion">
 
-                <article id="eventos">
-                    <img src="/imagenes/dota2.jpg"
-                         alt="Evento de videojuegos">
+            <!-- Eventos realizados -->
+            <section id="eventos-realizados">
+
+                <div class="titulo-seccion">
 
                     <h2>Eventos realizados</h2>
 
                     <p>
-                        Conoce nuestros torneos, demostraciones
-                        y lanzamientos.
+                        Galería de actividades anteriores
                     </p>
-                </article>
 
-                <aside id="contacto">
-                    <h2>Contáctanos</h2>
+                </div>
 
-                    <p>ventas@consoleworldstore.pe</p>
-                    <p>+51 999 123 456</p>
+                <div class="galeria-eventos">
 
-                    <a href="mailto:ventas@consoleworldstore.pe">
-                        Escríbenos
-                    </a>
-                </aside>
+                    <!-- Evento realizado 1 -->
+                    <article>
+
+                        <img src="../imagenes/noche-arcade.png"
+                             alt="Consola clásica en un evento retro">
+
+                        <span>Retro</span>
+
+                        <h3>Noche Arcade</h3>
+
+                        <p>
+                            Partidas libres con consolas y
+                            videojuegos clásicos.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Evento realizado 2 -->
+                    <article>
+
+                        <img src="../imagenes/gaming-weekend.png"
+                             alt="Encuentro de jugadores de videojuegos">
+
+                        <span>Comunidad</span>
+
+                        <h3>Gaming Weekend</h3>
+
+                        <p>
+                            Encuentro con jugadores y presentación
+                            de productos.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Evento realizado 3 -->
+                    <article>
+
+                        <img src="../imagenes/demo-tienda.png"
+                             alt="Demostración de consola en tienda">
+
+                        <span>Activación</span>
+
+                        <h3>Demo en tienda</h3>
+
+                        <p>
+                            Pruebas de consolas, videojuegos y
+                            promociones especiales.
+                        </p>
+
+                    </article>
+
+                </div>
 
             </section>
 
+
+            <!-- Invitación para participar -->
+            <aside id="participacion">
+
+                <div>
+                    <h2>
+                        ¿Quieres participar en el próximo evento?
+                    </h2>
+
+                    <p>
+                        Comunícate con nosotros para recibir información
+                        sobre las próximas actividades de Console World Store.
+                    </p>
+                </div>
+
+                <a href="contactanos.html">
+                    Contáctanos
+                </a>
+
+            </aside>
+
         </main>
 
-     
+        <!-- para estructura de calendario-->
+        <dialog id="calendario-eventos">
+            <div class="cabecera-calendario">
+                <div>
+                    <span>AGENDA GAMER</span>
+                    <h2>Calendario de eventos</h2>
+                    <p>Próximas actividades de Console World Store</p>
+                </div>
+
+                <button type="button"
+                        id="cerrar-calendario"
+                        aria-label="Cerrar calendario">
+                        &times;
+                </button>
+            </div>
+
+            <div class="contenido-calendario">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Evento</th>
+                            <th>Categoría</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>26 de octubre</td>
+                            <td>Copa Dulce o Fedeo</td>
+                            <td><span class="tipo torneo">Torneo virtual</span></td>
+                            <td>4:00 p. m.</td>
+                        </tr>
+                        <tr>
+                            <td>29 de octubre</td>
+                            <td>Torneo 1vs1 "Última bala"</td>
+                            <td><span class="tipo torneo">Torneo virtual</span></td>
+                            <td>6:30 p. m.</td>
+                        </tr>
+                        <tr>
+                            <td>2 de noviembre</td>
+                            <td>Zona de prueba</td>
+                            <td>
+                            <span class="tipo activacion">Activación</span>
+                            </td>
+                            <td>2:00 p. m.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pie-calendario">
+                <p>Los horarios podrían cambiar según disponibilidad.</p>
+                    <button type="button" id="aceptar-calendario">
+                        Entendido
+                    </button>
+            </div>
+        </dialog>    
+
         <footer>
             <p>
                 Derechos reservados. Console World Store,
                 Lima, Perú, 2026.
             </p>
 
-            <img src="/imagenes/face.webp"
+            <img src="../imagenes/face.webp"
                  alt="Facebook">
 
             <img src="../imagenes/instagram.png"
@@ -162,6 +370,6 @@
         </footer>
 
     </div>
-
+<script src="../js/eventos.js"></script>
 </body>
 </html>
