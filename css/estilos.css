@@ -267,9 +267,6 @@ footer img {
     position: sticky;
     top: 20px;
 }
-.catalogo section:first-child h2 {
-    text-align: center;
-}
 
 .categorias h3 {
     color: white;
@@ -294,4 +291,7 @@ footer img {
 
 .catalogo {
     flex: 1;
+}
+.catalogo section:first-child h2 {
+    text-align: center;
 }
