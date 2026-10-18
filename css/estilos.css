@@ -310,3 +310,445 @@ footer img {
     padding: 12px;
     transition: transform 0.3s;
 }
+
+/* CSS PARA EVENTOS*/
+/*CARACTERÍSTICAS DE PORTADA*/
+/* Descripción */
+#portada-eventos {
+    background-color: #dfefff;
+}
+
+/* Cuadro de información */
+#portada-eventos article {
+    border: 0;
+    background-color: #172033;
+}
+#portada-eventos article span {
+    color: white;
+    font-weight: bold;
+}
+#portada-eventos article h2 {
+    color: white;
+}    
+#portada-eventos article p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #dddddd;
+}
+#portada-eventos article ul {
+    margin: 5px 0 20px;
+    padding-left: 22px;
+}
+
+/* Elementos de la lista */
+#portada-eventos article li {
+    margin-bottom: 6px;
+    line-height: 1.3;
+    color: white;
+}
+
+/* Color de las viñetas */
+#portada-eventos article li::marker {
+    color: #20bdca;
+}
+/* Botón Ver calendario */
+#abrir-calendario {
+    padding: 13px 22px;
+    align-self: flex-start;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #356df3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Efecto del botón */
+#abrir-calendario:hover {
+    background-color: #172033;
+}
+
+
+
+
+
+
+
+/* Ventana emergente */
+#abrir-calendario {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #356df3;
+    color: #f4f5f7;
+}
+
+#calendario-eventos {
+    width: 70%;
+    max-width: 850px;
+    max-height: 80%;
+    margin: auto;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border: 1px solid #aeb4bd;
+    border-radius: 10px;
+    background-color: #f4f5f7;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Fondo oscuro detrás de la ventana */
+#calendario-eventos::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Cabecera del calendario */
+.cabecera-calendario {
+    padding: 22px 55px 22px 25px;
+    position: relative;
+    background-color: #172033;
+    color: white;
+}
+
+.cabecera-calendario span {
+    color: #429aec;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cabecera-calendario h2 {
+    margin: 6px 0;
+}
+
+.cabecera-calendario p {
+    color: #d6dbe4;
+}
+
+/* Botón X en la esquina superior derecha */
+#cerrar-calendario {
+    width: 35px;
+    height: 35px;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    border: 1px solid #697386;
+    border-radius: 50%;
+    background-color: #263248;
+    color: white;
+    font-size: 23px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#cerrar-calendario:hover {
+    background-color: #25d9e8;
+    color: #172033;
+}
+
+/* Espacio que contiene la tabla */
+.contenido-calendario {
+    padding: 25px;
+    background-color: #f4f5f7;
+}
+
+/* Tabla */
+.contenido-calendario table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Encabezados de las columnas */
+.contenido-calendario th {
+    padding: 13px;
+    border: 1px solid #c8cdd5;
+    text-align: left;
+    background-color: #dfe3e8;
+    color: #172033;
+}
+
+/* Celdas de información */
+.contenido-calendario td {
+    padding: 14px 13px;
+    border: 1px solid #c8cdd5;
+    color: #353c48;
+}
+
+/* Color alternado de las filas */
+.contenido-calendario tbody tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+/* Colores de las categorías */
+.tipo {
+    padding: 5px 9px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tipo.torneo {
+    background-color: #e8e0ff;
+    color: #6541bd;
+}
+
+.tipo.activacion {
+    background-color: #d9f6eb;
+    color: #087d61;
+}
+
+.tipo.lanzamiento {
+    background-color: #ffe9cc;
+    color: #a45a00;
+}
+
+/* Parte inferior */
+.pie-calendario {
+    padding: 17px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #c8cdd5;
+    background-color: #e6e8eb;
+}
+
+.pie-calendario p {
+    color: #555e6d;
+}
+
+#aceptar-calendario {
+    padding: 9px 18px;
+    border-radius: 5px;
+    background-color: #3682d8;
+    color: #172033;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*PARA SELECCIÓN DE FILTROS*/
+/* Sección completa */
+#filtros-eventos {
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f4f5f7;
+}
+
+/* Título */
+#filtros-eventos h2 {
+    margin: 0;
+    flex: 0 0 230px;
+}
+
+/* Barra completa */
+.grupo-filtros {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Cada segmento */
+#filtros-eventos .grupo-filtros .filtro {
+    height: 48px;
+    padding: 0 10px;
+    flex: 1;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-right: 0;
+    border-radius: 0;
+    background-color: white;
+    color: #172033;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Primer segmento */
+#filtros-eventos .grupo-filtros .filtro:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+/* Último segmento */
+#filtros-eventos .grupo-filtros .filtro:last-child {
+    border-right: 1px solid #cccccc;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Resalta todo el segmento */
+#filtros-eventos .grupo-filtros .filtro:hover {
+    border-color: #20bdca;
+    background-color: #20bdca;
+    color: white;
+}
+
+/* Segmento seleccionado */
+#filtros-eventos .grupo-filtros .filtro.activo {
+    border-color: #172033;
+    background-color: #172033;
+    color: white;
+}
+
+/* Contenedor de próximos eventos */
+.lista-proximos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tarjetas de próximos eventos */
+.evento-proximo {
+    width: 390px;
+    max-width: 100%;
+    min-width: 0;
+    flex: 0 0 390px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Imagen de próximos eventos */
+.evento-proximo img {
+    width: 55%;
+    min-height: 260px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Información de la tarjeta */
+.informacion-evento {
+    width: 45%;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de eventos realizados */
+.galeria-eventos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+/* Tarjetas de eventos realizados */
+.galeria-eventos article {
+    flex: 1;
+    min-width: 250px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Imágenes del mismo tamaño */
+.galeria-eventos article img {
+    width: 100%;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Textos interiores */
+.galeria-eventos article span {
+    margin: 14px 14px 5px;
+    display: block;
+    color: #087d87;
+}
+
+.galeria-eventos article h3 {
+    margin: 5px 14px;
+}
+
+.galeria-eventos article p {
+    margin: 8px 14px 18px;
+    line-height: 1.4;
+    color: #555555;
+}
+#mensaje-sin-eventos {
+    margin-top: 20px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    border: 1px solid #cccccc;
+    background-color: white;
+    color: #555555;
+}
+
+
+/*ASIDE PARA SOLICITAR MAS INFO DE EVENTOS*/
+/* Invitación para participar */
+#participacion {
+    width: calc(100% - 40px);
+    padding: 25px 30px;
+    margin: 25px 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-basis: calc(100% - 40px);
+    box-sizing: border-box;
+
+    border: 1px solid #20bdca;
+    border-radius: 8px;
+    background-color: #bff4f7;
+    color: #172033;
+}
+
+#participacion h2 {
+    margin-bottom: 8px;
+    color: #172033;
+}
+
+#participacion p {
+    line-height: 1.5;
+    color: #39515c;
+}
+
+/* Enlace de contacto */
+#participacion a {
+    padding: 11px 20px;
+    display: inline-block;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    border-radius: 5px;
+    background-color: #172033;
+    color: white;
+}
+/* Cambio al pasar el cursor */
+#participacion a:hover {
+    background-color: #087d87;
+}
+
+/*HASTA AQUI LLEGA EVENTOS*/
+
+
