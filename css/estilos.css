@@ -48,7 +48,14 @@ nav a {
     text-decoration: none;
     color: #14213d;
 }
-
+nav a:hover {
+    background-color: #289ea8;
+    color: white;
+}
+nav a.activo {
+    background-color: #172033;
+    color: white;
+}
 /* main */
 main {
     background-color: #f4f6fa;
