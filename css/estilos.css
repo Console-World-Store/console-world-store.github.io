@@ -307,6 +307,7 @@ footer img {
 .catalogo section:first-child h2 {
     text-align: center;
 }
+/* Capa oscura para que se lea el texto de las tarjetas */
 .catalogo .tarjeta::after {
     content: "";
     position: absolute;
