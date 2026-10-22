@@ -261,11 +261,14 @@ footer img {
     transform: translateY(-10px);
 }
 
+/* CSS PARA VIDEOJUEGOS */
+/* Estructura: barra lateral + catálogo */
 .pagina-juegos {
     display: flex;
     align-items: flex-start;
 }
 
+/* Barra lateral de categorías */
 .categorias {
     width: 180px;
     margin: 20px 0 20px 20px;
@@ -296,10 +299,11 @@ footer img {
 .categorias a:hover {
     background-color: #356df3;
 }
-
+/* Catálogo de juegos */
 .catalogo {
     flex: 1;
 }
+/* Título principal centrado */
 .catalogo section:first-child h2 {
     text-align: center;
 }
