@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,6 @@
 
         <header>
             <h1>Console World Store</h1>
-            <alt="Consolas y videojuegos">
         </header>
 
         <nav>
@@ -28,45 +27,25 @@
 
         <main class="contenido-principal">
             <section class="seccion-catalogo" style="width: 100%;">
-                
-                <div class="main-tarjetas" style="margin-bottom: 30px;">
+              
+                <div class="main-tarjetas">
                     <h2>Catálogo Completo de Consolas</h2>
                     <p>Explora nuestra selección de equipos retro y de última generación con garantía oficial.</p>
                 </div>
+                    
+                <div id="contenedor-filtros" class="barra-filtros"></div>
 
-                <div class="tarjetas" style="flex-wrap: wrap; gap: 25px;">
-                
-                    <div class="tarjeta">
-                        <img src="/imagenes/xboxseriesx.jpg" alt="XBOX Series X">
-                        <h3>XBOX Series X</h3>
-                        <p>Aprovecha las nuevas ofertas con el Xbox Game Pass</p>
-                        <span style="font-weight: bold; color: #00aa55; margin-bottom: 10px;">S/.2620.00</span>
-                        <a href="#" class="btn-tarjeta">Comprar</a>
-                    </div>
+                <div id="grid-consolas" class="tarjetas"></div>
 
-                    <div class="tarjeta">
-                        <img src="/imagenes/play5.jpg" alt="PlayStation 5 Pro">
-                        <h3>PlayStation 5 Pro</h3>
-                        <p>Equipos modernos con mayor velocidad, potencia y juego en línea en 4K.</p>
-                        <span style="font-weight: bold; color: #00aa55; margin-bottom: 10px;">S/.4299.00</span>
-                        <a href="#" class="btn-tarjeta">Comprar</a>
-                    </div>
-
-                    <div class="tarjeta">
-                        <img src="/imagenes/ns2.jpg" alt="Nintendo Switch 2 ">
-                        <h3>Nintendo Switch 2</h3>
-                        <p>Versatilidad total para jugar en modo portátil o en la televisión de casa.</p>
-                        <span style="font-weight: bold; color: #00aa55; margin-bottom: 10px;">S/.2599.00</span>
-                        <a href="#" class="btn-tarjeta">Comprar</a>
-                    </div>
-                    <div class="tarjeta-fondo">
-            </div>
             </section>
         </main>
+
         <footer>
             <p>Derechos reservados. Console World Store, Lima, Perú, 2026.</p>
         </footer>
 
     </div>
+
+    <script src="../js/bucle.js"></script>
 </body>
 </html>

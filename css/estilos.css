@@ -261,6 +261,7 @@ footer img {
     transform: translateY(-10px);
 }
 
+
 /* CSS PARA VIDEOJUEGOS */
 /* Estructura: barra lateral + catálogo */
 .pagina-juegos {
@@ -764,4 +765,88 @@ footer img {
 
 /*HASTA AQUI LLEGA EVENTOS*/
 
+/*CSS PARA CONSOLAS*/
 
+.barra-filtros {
+    display: flex;                
+    flex-wrap: wrap;              
+    gap: 12px;                    
+    margin: 20px 0 30px 0;
+}
+
+.btn-filtro {
+    padding: 8px 18px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #1e293b;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.btn-filtro:hover, .btn-filtro.activo {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+#grid-consolas .tarjeta {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+#grid-consolas .tarjeta img {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    border-radius: 8px;
+   
+}
+
+/* 3. Título de la consola */
+#grid-consolas .tarjeta h3 {
+    font-size: 16px;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+/* 4. Descripción o detalle de envío */
+#grid-consolas .tarjeta p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0 0 12px 0;
+}
+
+#grid-consolas .tarjeta .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00aa55;
+    margin-bottom: 12px;
+    display: block;
+}
+
+#grid-consolas .btn-tarjeta {
+    display: block;
+    text-align: center;
+    background-color: #00aa55;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
