@@ -1,167 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Console World Store</title>
-    <link href="../css/estilos.css" rel="stylesheet">
+    <title>Contacto | Console World Store</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-
 <body>
+<div id="contenedor">
 
-    <div id="contenedor">
+    <header>
+        <h1>Console World Store</h1>
+    </header>
 
-        <header>
-            <h1>Console World Store</h1>
-            <alt="Consolas y videojuegos">
-        </header>
+    <nav>
+        <a href="proyecto.html">Inicio</a>
+        <a href="consolas.html">Consolas</a>
+        <a href="videojuegos.html">Videojuegos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="contactanos.html" class="activo">Contacto</a>
+    </nav>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="consolas.html">Consolas</a>
-            <a href="videojuegos.html">Videojuegos</a>
-            <a href="ofertas.html">Ofertas</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="contactanos.html" class="activo">Contacto</a>
-        </nav>
+    <main>
+        <section class="seccion-contacto">
+            <h2>Contáctanos</h2>
 
-        <main class="contenido-principal">
-
-          
-            <section id="inicio">
-
-                <article>
-                    <h2>Tu próxima aventura comienza aquí</h2>
-
-                    <p>
-                        Encuentra consolas retro, consolas actuales,
-                        videojuegos y accesorios.
-                    </p>
-
-                    <a href="../paginas/consolas.html">Explorar catálogo</a>
-                </article>
-
-                <figure>
-                    <img src="/imagenes/ns2.jpg"
-                         alt="Consola de videojuegos actual">
-
-                    <figcaption>
-                        Consolas y videojuegos para todos
-                    </figcaption>
-                </figure>
-
-            </section>
-
-           
-            <section id="consolas">
-
-                <h2>Consolas</h2>
-
-                <article id="retro">
-                    <img src="/imagenes/atari.jpg"
-                         alt="Consola retro">
-
-                    <h3>Consolas retro</h3>
-
-                    <p>
-                        Consolas clásicas, máquinas arcade y
-                        ediciones coleccionables.
-                    </p>
-                </article>
-
-                <article id="actuales">
-                    <img src="/imagenes/play5.jpg"
-                         alt="Consola actual">
-
-                    <h3>Consolas actuales</h3>
-
-                    <p>
-                        Equipos modernos con mayor velocidad,
-                        potencia y juego en línea.
-                    </p>
-                </article>
-
-            </section>
-
+            <!-- Columna 1: datos -->
+            <article class="datos-contacto">
+                <h3>Escríbenos o visítanos</h3>
+                <p><strong>Correo:</strong> ventas@consoleworldstore.pe</p>
+                <p><strong>Teléfono:</strong> +51 999123456</p>
+                <p><strong>Dirección:</strong> Av. Siempre viva 742</p>
+                <p><strong>Horario:</strong> 11:00 am - 09:00pm</p>
+            <div class="mapa-contacto">
+                <h3>Encuéntranos</h3>
+                    <div class="mapa-ventana">
+                        <img src="../imagenes/Console_World_maps.png"
+                     alt="Mapa de la ubicación de Console World Store en [DISTRITO]">
+                    </div>
+            </div>
+            </article>
             
-            <section id="productos">
+            <!-- Columna 2: formulario -->
+            <article class="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <article id="videojuegos">
-                    <img src="/imagenes/gta6.webp" 
-                    alt="Videojuegos disponibles">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
 
-                    <h2>Videojuegos</h2>
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option>Consulta de producto</option>
+                        <option>Estado de mi pedido</option>
+                        <option>Eventos y torneos</option>
+                        <option>Otro</option>
+                    </select>
 
-                    <p>
-                        Juegos de acción, aventura, deportes
-                        y otros géneros.
-                    </p>
-                </article>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-                <article id="ofertas">
-                    <img src="/imagenes/ofertasxd.webp"
-                    alt="Ofertas">
-                    <h2>Ofertas</h2>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </article>
+        </section>
+    </main>
 
-                    <p>
-                        Descuentos en consolas, videojuegos
-                        y productos seleccionados.
-                    </p>
+    <footer>
+        <p>Derechos reservados. Console World Store, Lima, Perú, 2026.</p>
+        <img src="../imagenes/Facebook_Logo_Primary.png" alt="Facebook">
+        <img src="../imagenes/Instagram_Glyph_Gradient.png" alt="Instagram">
+        <img src="../imagenes/yt_icon_red_digital.png" alt="YouTube">
+    </footer>
 
-                    <a href="paginas/ofertas.html">Ver ofertas</a>
-                </article>
-
-            </section>
-
-           
-            <section id="informacion">
-
-                <article id="eventos">
-                    <img src="/imagenes/dota2.jpg"
-                         alt="Evento de videojuegos">
-
-                    <h2>Eventos realizados</h2>
-
-                    <p>
-                        Conoce nuestros torneos, demostraciones
-                        y lanzamientos.
-                    </p>
-                </article>
-
-                <aside id="contacto">
-                    <h2>Contáctanos</h2>
-
-                    <p>ventas@consoleworldstore.pe</p>
-                    <p>+51 999 123 456</p>
-
-                    <a href="mailto:ventas@consoleworldstore.pe">
-                        Escríbenos
-                    </a>
-                </aside>
-
-            </section>
-
-        </main>
-
-     
-        <footer>
-            <p>
-                Derechos reservados. Console World Store,
-                Lima, Perú, 2026.
-            </p>
-
-            <img src="/imagenes/Facebook_Logo_Primary.png"
-                 alt="Facebook">
-
-            <img src="../imagenes/Instagram_Glyph_Gradient.png"
-                 alt="Instagram">
-
-            <img src="../imagenes/yt_icon_red_digital.png"
-                 alt="YouTube">
-        </footer>
-
-    </div>
-
+</div>
 </body>
 </html>
