@@ -901,7 +901,7 @@ footer img {
 
 .mapa-contacto {
     width: 100%;              /* baja a su propia fila */
-    margin: 10px;
+    margin: 10px 0;
 }
 
 /* El recuadro visible */
