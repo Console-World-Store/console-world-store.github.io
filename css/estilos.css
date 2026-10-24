@@ -271,8 +271,7 @@ footer img {
 
 /* Barra lateral de categorías */
 .categorias {
-    width: 20%;
-    min-width:150px;
+    width: 180px;
     margin: 20px 0 20px 20px;
     padding: 15px;
     background-color: #14213d;
@@ -850,4 +849,277 @@ footer img {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+}
+/*FIN CSS DE CONSOLAS*/
+
+/*CSS DE OFERTAS */
+
+.contenido-principal {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+}
+
+.banner-ofertas {
+    background-color: #dff5ff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    
+}
+
+.banner-ofertas h2 {
+    color: #172a35;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.banner-ofertas p {
+    color: #455a64;
+}
+
+.imagen-banner {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.boton,
+.boton-comprar {
+    display: inline-block;
+    background-color: #0071aa;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover,
+.boton-comprar:hover {
+    background-color: #004f78;
+}
+
+
+/* 7. CATEGORÍAS */
+
+.titulo-categorias {
+    text-align: center;
+    color: #172a35;
+}
+
+.lista-categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0 40px;
+}
+
+.categoria {
+    display: block;
+    background-color: white;
+    color: #172a35;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 22px;
+    border: 1px solid #d6e0e7;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.categoria:hover {
+    background-color: #dff5ff;
+    border-color: #0071aa;
+}
+
+.catalogo-ofertas .titulo-catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.catalogo-ofertas .titulo-catalogo h2 {
+    color: #172a35;
+    margin-top: 5px;
+}
+
+.catalogo-ofertas .subtitulo {
+    color: #0071aa;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.catalogo-ofertas .productos {
+    display: flex;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: 25px;
+    align-items: stretch;
+}
+
+.catalogo-ofertas .tarjeta {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+}
+
+.catalogo-ofertas .tarjeta h3 {
+    color: #172a35;
+    margin-bottom: 5px;
+}
+.catalogo-ofertas .tarjeta p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0 0 12px 0;
+}
+.catalogo-ofertas .imagen-producto {
+    position:absolute;
+    width: 100%;
+}
+
+.catalogo-ofertas .imagen-producto img {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background-color: #f7f9fb;
+    border-radius: 6px;
+    object-fit: cover;
+   
+}
+
+.descuento {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e53935;
+    color: white;   
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.catalogo-ofertas .tarjeta .descripcion {
+    color: #030303;
+    line-height: 1.5;
+    flex-grow: 1;
+    z-index: 2;
+}
+
+.catalogo-ofertas .precios {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.catalogo-ofertas .precio-anterior {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.catalogo-ofertas .precio-actual {
+    color: #2bff00;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.boton-comprar {
+    width: 100%;
+    margin-top: auto;
+}
+
+.contacto {
+    background-color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.contacto h2 {
+    color: #172a35;
+}
+
+.contacto p {
+    color: #455a64;
+    overflow-wrap: anywhere;
+}
+
+.contacto .boton {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #172a35;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 8px;
+}
+
+@media (max-width: 600px) {
+
+    .catalogo-ofertas .contenido-principal {
+        width: 92%;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .banner-ofertas h2 {
+        font-size: 24px;
+    }
+
+    .catalogo-ofertas .titulo-catalogo {
+        flex-direction: column;
+        align-items:flex-end;
+    }
+
+    .catalogo-ofertas .productos {
+        grid-template-columns: 1fr;
+    }
+
 }
