@@ -2,7 +2,12 @@ const contenedor = document.getElementById('grid-consolas');
 const contenedorFiltros = document.getElementById('contenedor-filtros');
 let todosLosProductos = []; 
 
-// Crea las tarjetas
+// Culqi Sandbox prueba pasarela de pagos
+if (typeof Culqi !== 'undefined') {
+  Culqi.publicKey = 'pk_test_woZYQU9v6lHbzflE';
+}
+
+// Crea las tarjetas automaticamente
 function renderizarProductos(lista) {
   if (!contenedor) return;
   contenedor.innerHTML = ''; 
@@ -24,15 +29,52 @@ function renderizarProductos(lista) {
       <a href="#" class="btn-tarjeta">Comprar</a>
     `;
 
+    const btnComprar = card.querySelector('.btn-tarjeta');
+    
+    btnComprar.addEventListener('click', (e) => {
+      e.preventDefault(); 
+
+      
+      const precioLimpio = parseFloat(item.precioActual.replace(/[^0-9.]/g, ''));
+      
+      const montoEnCentimos = Math.round(precioLimpio * 100);
+
+      if (typeof Culqi !== 'undefined') {
+    
+        Culqi.settings({
+          title: item.titulo,
+          currency: 'PEN',
+          amount: montoEnCentimos,
+          description: `Compra de ${item.titulo} en Console World Store`
+        });
+
+        // Ventana de Compra Modo flotante
+        Culqi.open();
+      } else {
+        alert("Hubo un error inesperado, Contacte con soporte");
+      }
+    });
+
     contenedor.appendChild(card);
   });
 }
 
-// Genera los botones
+// Funcion de Culqi
+window.culqi = function() {
+  if (Culqi.token) {
+    const token = Culqi.token.id;
+    console.log("Compra realizada con Exito :", token);
+    alert(`¡Pago realizado con éxito!`);
+  } else {
+    console.error("Error en Culqi:", Culqi.error);
+    alert("Hubo un error en la simulación del pago: " + (Culqi.error ? Culqi.error.user_message : "Desconocido"));
+  }
+};
+
+// Genera los botones de filtros automáticos
 function generarFiltrosAutomaticos(productos) {
   if (!contenedorFiltros) return;
 
-  // Extrae los productos de consolas
   const subcategorias = ['todas', ...new Set(productos.map(p => p.subcategoria))];
 
   contenedorFiltros.innerHTML = '';
@@ -44,7 +86,6 @@ function generarFiltrosAutomaticos(productos) {
     
     boton.textContent = subcat;
 
-    // Vuelve a los botones activos
     boton.addEventListener('click', (e) => {
       document.querySelectorAll('.btn-filtro').forEach(btn => btn.classList.remove('activo'));
       e.target.classList.add('activo');
@@ -61,7 +102,7 @@ function generarFiltrosAutomaticos(productos) {
   });
 }
 
-//  Carga inicial de datos
+// Carga inicial de datos
 document.addEventListener('DOMContentLoaded', () => {
   fetch('../js/consolas.json')
     .then(response => {
