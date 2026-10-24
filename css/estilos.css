@@ -1094,6 +1094,75 @@ footer {
     margin: 8px;
 }
 
+/* CSS PARA CONTACTO */
+.seccion-contacto article {
+    min-width: 260px;          /* en celular, las columnas bajan una debajo de otra */
+}
+
+.seccion-contacto label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    color: #14213d;
+}
+
+.seccion-contacto input,
+.seccion-contacto select,
+.seccion-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+.seccion-contacto input:focus,
+.seccion-contacto select:focus,
+.seccion-contacto textarea:focus {
+    border-color: #356df3;
+    outline: 2px solid #356df3;
+}
+
+.seccion-contacto textarea {
+    resize: vertical;
+}
+
+.seccion-contacto button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #356df3;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seccion-contacto button:hover {
+    background-color: #172033;
+}
+
+.mapa-contacto {
+    margin-top: 15px;
+}
+
+.mapa-ventana {
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+}
+
+.mapa-ventana img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;         /* llena los 250px recortando los bordes, sin deformar */
+    display: block;
+    margin-bottom: 0;
+}
+
+
 @media (max-width: 600px) {
 
     .catalogo-ofertas .contenido-principal {
