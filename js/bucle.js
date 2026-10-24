@@ -26,17 +26,14 @@ function renderizarProductos(lista) {
       <h3>${item.titulo}</h3>
       <p>${item.envio}</p>
       <span class="precio">${item.precioActual}</span>
-      <a href="#" class="btn-tarjeta">Comprar</a>
+      <button class="btn-tarjeta">Comprar</button>
     `;
 
     const btnComprar = card.querySelector('.btn-tarjeta');
     
     btnComprar.addEventListener('click', (e) => {
-      e.preventDefault(); 
-
-      
+            
       const precioLimpio = parseFloat(item.precioActual.replace(/[^0-9.]/g, ''));
-      
       const montoEnCentimos = Math.round(precioLimpio * 100);
 
       if (typeof Culqi !== 'undefined') {
