@@ -900,22 +900,17 @@ footer img {
 }
 
 .mapa-contacto {
-    width: 100%;              /* baja a su propia fila */
-    margin: 10px 0;
+    margin-top: 15px;
 }
 
-/* El recuadro visible */
 .mapa-ventana {
-    width: 100%;
-    height: 400px;
-    overflow: auto;           /* si el contenido es más grande, aparece scroll */
     border-radius: 8px;
     border: 1px solid #cccccc;
+    overflow: hidden;      /* recorta las esquinas de la imagen con el border-radius */
 }
 
-/* La imagen, más grande que el recuadro */
 .mapa-ventana img {
-    width: 130%;              /* el doble del ancho de la ventana */
-    max-width: none;
+    width: 100%;           /* exactamente el ancho de la columna */
+    height: auto;          /* el alto se ajusta solo, sin deformar la imagen */
     display: block;
 }
