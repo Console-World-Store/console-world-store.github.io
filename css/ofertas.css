@@ -1,57 +1,328 @@
-/* OFERTAS */
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f5f9;
-    color: #263238;
-    line-height: 1.5;
+    background-color: #101720;
 }
 
 #contenedor {
     width: 100%;
+    margin: 30px auto;
+    background-color: #f4f6fa;
 }
 
+
 header {
-    background-color: #19597e;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
+   background-image: linear-gradient(#00000080,#00000080),url("/imagenes/ns2.avif");
+   background-size: cover;
+   background-position: center;
+   
 }
 
 header h1 {
-    margin: 0;
-    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
-header p {
-    margin-bottom: 0;
-    color: #d7e8f0;
+header img {
+    width: 100%;
+    vertical-align: bottom;
 }
+
 
 nav {
-    background-color: #223d4d;
     text-align: center;
-    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
 }
 
 nav a {
+    padding: 15px 10px;
     display: inline-block;
+    text-decoration: none;
+    color: #14213d;
+}
+nav a:hover {
+    background-color: #289ea8;
+    color: white;
+}
+nav a.activo {
+    background-color: #172033;
+    color: white;
+}
+/* main */
+main {
+    background-color: #f4f6fa;
+}
+
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #cccccc;
+}
+
+section h2 {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #14213d;
+}
+
+
+article {
+    width: 42%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+article h2, h3 {
+    margin-bottom: 10px;
+    color: #14213d;
+}
+
+article p {
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+article img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+article a {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #356df3;
+    color: white;
+}
+
+
+#inicio {
+    background-color: #14213d;
+}
+
+#inicio article {
+    background-color: #14213d;
+    border: 0;
+}
+
+#inicio article h2 {
+    color: white;
+}
+
+#inicio article p {
+    color: #dddddd;
+}
+
+
+figure {
+    width: 42%;
+    margin: 10px;
+}
+
+figure img {
+    width: 100%;
+    vertical-align: bottom;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+    color: #14213d;
+}
+
+
+aside {
+    width: 42%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+}
+
+aside p {
+    margin-bottom: 10px;
+}
+
+aside a {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #356df3;
+    color: white;
+}
+
+#ofertas {
+    background-color: #fff0f7;
+    border: 1px solid #ff4d9a;
+}
+
+#ofertas h2 {
+    color: #14213d;
+}
+
+#ofertas a {
+    background-color: #ff4d9a;
+}
+
+
+#contacto {
+    background-color: #14213d;
+}
+
+#contacto h2,
+#contacto p {
+    color: white;
+}
+
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #14213d;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer img {
+    width: 30px;
+    margin: 5px;
+}
+.seccion-catalogo {
+    width: 100%;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 25px;
+}
+
+.tarjeta {
+    position: relative;      
+    width: 250px;
+    height: 250px;           
+    border-radius: 8px;
+    overflow: hidden;        
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    box-sizing: border-box;
+    border: none;
+}
+
+.tarjetas img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    z-index: 1;              
+}
+.precio-tarjeta {
+    display: block;
+    font-weight: bold;
+    color: #00aa55;
+    margin-bottom: 10px;
+}
+.tarjeta h3,
+.tarjeta p,
+.tarjeta span,
+.tarjeta a {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;         
+}
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+
+/* CSS PARA VIDEOJUEGOS */
+/* Estructura: barra lateral + catálogo */
+.pagina-juegos {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Barra lateral de categorías */
+.categorias {
+    width: 180px;
+    margin: 20px 0 20px 20px;
+    padding: 15px;
+    background-color: #14213d;
+    border: none;
+    position: sticky;
+    top: 20px;
+}
+
+.categorias h3 {
+    color: white;
+}
+
+.categorias ul {
+    list-style: none;
+}
+
+.categorias a {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
     color: white;
     text-decoration: none;
-    margin: 5px 12px;
-    font-weight: bold;
+    border-bottom: 1px solid #2a3a5e;
 }
 
-nav a:hover,
-nav a.activo {
-    color: #45c5f5;
+.categorias a:hover {
+    background-color: #356df3;
+}
+/* Catálogo de juegos */
+.catalogo {
+    flex: 1;
+}
+/* Título principal centrado */
+.catalogo section:first-child h2 {
+    text-align: center;
+}
+/* Capa oscura para que se lea el texto de las tarjetas */
+.catalogo .tarjeta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 35%, rgba(0, 0, 0, 0.85));
+    z-index: 1;
 }
 
+.catalogo .tarjeta {
+    padding: 12px;
+    transition: transform 0.3s;
 .contenido-principal {
     width: 90%;
     max-width: 1200px;
