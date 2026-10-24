@@ -851,3 +851,50 @@ footer img {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* CSS PARA CONTACTO */
+.seccion-contacto label {
+    display: block;           /* cada label en su propia línea */
+    margin: 12px 0 5px;
+    font-weight: bold;
+    color: #14213d;
+}
+
+.seccion-contacto input,
+.seccion-contacto select,
+.seccion-contacto textarea {
+    width: 100%;              /* ocupa todo el ancho del article */
+    padding: 10px;
+    border: 1px solid #cccccc; /* devuelve el borde que quitó el * */
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Cuando el usuario está escribiendo en un campo */
+.seccion-contacto input:focus,
+.seccion-contacto select:focus,
+.seccion-contacto textarea:focus {
+    border-color: #356df3;
+    outline: 2px solid #356df3;
+}
+
+.seccion-contacto textarea {
+    resize: vertical;         /* solo se estira hacia abajo */
+}
+
+.seccion-contacto button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #356df3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seccion-contacto button:hover {
+    background-color: #172033;
+}
