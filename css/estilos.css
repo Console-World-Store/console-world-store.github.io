@@ -911,6 +911,8 @@ footer img {
 
 .mapa-ventana img {
     width: 100%;           /* exactamente el ancho de la columna */
-    height: auto;          /* el alto se ajusta solo, sin deformar la imagen */
+    height: 250px;
+    object-fit: cover; /* llena los 250px recortando los bordes, sin deformar */
     display: block;
+    margin-bottom: 0;
 }
