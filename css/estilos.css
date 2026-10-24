@@ -907,7 +907,7 @@ footer img {
 /* El recuadro visible */
 .mapa-ventana {
     width: 100%;
-    height: 350px;
+    height: 400px;
     overflow: auto;           /* si el contenido es más grande, aparece scroll */
     border-radius: 8px;
     border: 1px solid #cccccc;
@@ -915,7 +915,7 @@ footer img {
 
 /* La imagen, más grande que el recuadro */
 .mapa-ventana img {
-    width: 200%;              /* el doble del ancho de la ventana */
+    width: 130%;              /* el doble del ancho de la ventana */
     max-width: none;
     display: block;
 }
